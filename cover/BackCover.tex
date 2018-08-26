@@ -1,4 +1,4 @@
-\documentclass{scrartcl}
+\documentclass[11pt]{scrartcl}
 \input{../BookParameters.tex}
 
 \usepackage{geometry}
@@ -21,34 +21,34 @@
 %% ---------------------------------------------------------------------------
 %% ---------------------------------------------------------------------------
 \begin{document}
-\pagecolor{yellow!30}
+\pagecolor{gray!30}
 
 \setlength\parindent{0ex}
 \begin{adjustwidth}{0.5in}{0in}
 	\begin{center}
-	{\Huge{\textbf{\textsf\TheMainTitle}}}
+	%{\Huge{\textbf{\textsf\TheMainTitle}}}
 	
 	\vspace*{0.4cm}
 	
-	{\Large{\textsf\TheSubTitle}}
+	%{\Large{\textsf\TheSubTitle}}
 	\end{center}
 	
-	\vspace*{0.5cm}
+	\vspace*{2cm}
 	
 	\BackDescription
 
-	\vspace*{0.1cm}
-	\begin{center}
-	---------------------------------------------------------------------------------
-	\end{center}
-	\vspace*{0.1cm}
-	
-	\includegraphics[width=0.4\textwidth]{../images/AuthorIcon.jpg}%
-	%\vspace*{-67mm}
-	\hspace*{0.1\textwidth}%
-	\includegraphics[width=0.39\textwidth]{../images/BackCoverArt.jpg}
-		
-	\AuthorBio
+%	\vspace*{0.1cm}
+%	\begin{center}
+%	---------------------------------------------------------------------------------
+%	\end{center}
+%	\vspace*{0.1cm}
+%	
+%	\includegraphics[width=0.4\textwidth]{../images/AuthorIcon.jpg}%
+%	%\vspace*{-67mm}
+%	\hspace*{0.1\textwidth}%
+%	\includegraphics[width=0.39\textwidth]{../images/BackCoverArt.jpg}
+%		
+%	\AuthorBio
 \end{adjustwidth}
 
 	
@@ -57,15 +57,17 @@
    \texttt{Cover Width:\CoverWidth in x \CoverHeight in., Spine:\SpineWidth in.} \par
    \texttt{Jacket Width:\JacketWidth in., Total Pages:\TotalPageCount.} \par
 }{
-  \begin{adjustwidth}{10mm}{9cm}
-    \begin{center}
-      \vspace*{9mm}
-      \textbf{\textit{\ThePublisherLineA}} \par
-      \vspace*{1mm}
-      \includegraphics[width=15mm]{../images/PressLogo.png}\par%
-      \vspace*{-1mm}\hspace*{-1mm}\textbf{\textit{\ThePublisherLineB}}\par
-    \end{center}
-  \end{adjustwidth}
+%  \begin{adjustwidth}{10mm}{9cm}
+%    \begin{center}
+%      \vspace*{9mm}
+%      \textbf{\textit{\ThePublisherLineA}} \par
+%      \vspace*{1mm}
+%      \includegraphics[width=15mm]{../images/PressLogo.png}\par%
+%      \vspace*{-1mm}\hspace*{-1mm}\textbf{\textit{\ThePublisherLineB}}\par
+%    \end{center}
+%  \end{adjustwidth}
+
+  \vspace*{12cm}
 
   \ifthenelse{\isnamedefined{PrintISBN}}{
     \IfFileExists{ISBN.png}{%
