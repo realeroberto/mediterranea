@@ -75,7 +75,7 @@
 \Boolean{NOTABLIST}   {true}   % Do not generate list of tables
 \Boolean{NOINDEX}     {yes}    % Do not generate index entries
 \Boolean{NOAUTHORS}   {yes}     % Do not include the Authors section
-\Boolean{NOHYPERREF}  {no}     % Disables hyperref - href linking
+\Boolean{NOHYPERREF}  {yes}     % Disables hyperref - href linking
 \Boolean{NOABBR}      {yes}     % Suppress abbreviations
 \Boolean{NOIMAGES}    {yes}     % Disable Graphics inclusion [for debugging]
 
@@ -142,7 +142,7 @@
   \vspace*{3in}
   \Huge{\textsf\TheMainTitle}
 \end{center}
-\newpage
+\cleardoublepage
 
 \begin{center}
   \vspace*{2in}
@@ -181,7 +181,6 @@
 %	\shorttoc{Summary Contents}{0}% Tighter spacing, Chapter names only.
 %\endgroup%
 
-\cleardoublepage
 %\tableofcontents
 %
 %% ----------------------------------------------------------------------------
@@ -199,9 +198,11 @@
 }%
 %% ----------------------------------------------------------------------------
 %% Preface page(s)
-\Indent
-\clearpage
-\chapter*{Preface}
+
+\newpage
+\newpage
+\hypersetup{pageanchor=false}
+\chapter*{}
 \addcontentsline{toc}{chapter}{Preface}
 \input{tex/preface}
 
@@ -210,7 +211,7 @@
 %% Chapters
 
 \mainmatter					% book only.
-\pagestyle{headings}
+\pagestyle{empty}
 \clearpage
 \pagenumbering{arabic}  % lowercase arabic numbers
 \setcounter{page}{1} % Set the first page number
@@ -224,7 +225,7 @@
 %% ----------------------------------------------------------------------------
 %% ----------------------------------------------------------------------------
 \backmatter			
-\BookEndNotes
+%\BookEndNotes
 
 %% ----------------------------------------------------------------------------
 %% ----------------------------------------------------------------------------
@@ -293,7 +294,7 @@
 \fi
 %%
  ----------------------------------------------------------------------------
-\cleardoublepage\phantomsection%
+\clearpage
 
 \typeout{\detokenize{\TRAP-LOG-MESSAGE}\{\TheAuthor message\}}.
 
