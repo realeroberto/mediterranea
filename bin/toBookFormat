@@ -304,18 +304,18 @@ function makePdf()
     local pdfparms="-synctex=1 -interaction=nonstopmode \"$bookName\".tex"
     if [[ totext -eq 1 ]]; then
         logrun "Latex to PDF -- pass 1" "pdflatex" "$pdfparms" 1
-        logrun "Generate bibliography" "bibtex" "\"$bookName\".aux" 1
+#        logrun "Generate bibliography" "bibtex" "\"$bookName\".aux" 1
         logrun "Latex to PDF -- pass 2" "pdflatex" "$pdfparms" 1
-        logrun "Generate referenced authors list" "authorindex" "\"$bookName\"" 2
+#        logrun "Generate referenced authors list" "authorindex" "\"$bookName\"" 2
         logrun "Generate index" "makeindex" "\"$bookName\".idx" 2
         logrun "Latex to PDF -- pass 3" "pdflatex" "$pdfparms" 1        
         pdfparms="--output-format=dvi $pdfparms"
         logrun "Latex to DVI ($bookName.dvi)" "pdflatex" "$pdfparms" -1
     else
         logrun "Latex to PDF -- pass 1" "pdflatex" "$pdfparms" 1
-        logrun "Generate bibliography" "bibtex" "\"$bookName\".aux" 1
+#        logrun "Generate bibliography" "bibtex" "\"$bookName\".aux" 1
         logrun "Latex to PDF -- pass 2" "pdflatex" "$pdfparms" 1
-        logrun "Generate referenced authors list" "authorindex" "\"$bookName\"" 2
+#        logrun "Generate referenced authors list" "authorindex" "\"$bookName\"" 2
         logrun "Generate index" "makeindex" "\"$bookName\".idx" 2
         logrun "Latex to PDF -- pass 3" "pdflatex" "$pdfparms" 1
         logrun "Latex to PDF -- pass 4" "pdflatex" "$pdfparms" 1
