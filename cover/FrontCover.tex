@@ -54,52 +54,52 @@
 %% Bar across the top
 %\tikz[remember picture,overlay]%
 
-\begin{tikzpicture}[remember picture,overlay]
-  \node[fill=BannerColor,
-    minimum width=\paperwidth,
-    minimum height=6em,
-    anchor=north, 
-  ] at (current page.north){};
-  \node[
-    font=\LARGE\bfseries,
-    text=Cornsilk,
-    xshift=0mm, yshift=-14mm
-  ] at (current page.north) {\TheBookSeries};
-\end{tikzpicture}
+%\begin{tikzpicture}[remember picture,overlay]
+%  \node[fill=BannerColor,
+%    minimum width=\paperwidth,
+%    minimum height=6em,
+%    anchor=north, 
+%  ] at (current page.north){};
+%  \node[
+%    font=\LARGE\bfseries,
+%    text=Cornsilk,
+%    xshift=0mm, yshift=-14mm
+%  ] at (current page.north) {\TheBookSeries};
+%\end{tikzpicture}
 
 \vspace*{1\baselineskip}
 
-{\bfseries\itshape%
- \color{LightGoldenrod!50!Gold}
- \fontsize{24.88pt}{36pt}
- \selectfont{\TheMainTitle}\par}
+%{\bfseries\itshape%
+% \color{LightGoldenrod!50!Gold}
+% \fontsize{24.88pt}{36pt}
+% \selectfont{\TheMainTitle}\par}
+%
+%  \vspace*{2\baselineskip}
+%
+%{\bfseries\itshape\
+%  \color{LightGoldenrod!50!Gold}
+%  \fontsize{14.4pt}{18pt}\selectfont
+%  {\TheSubTitle\par}
 
-  \vspace*{2\baselineskip}
-
-{\bfseries\itshape\
-  \color{LightGoldenrod!50!Gold}
-  \fontsize{14.4pt}{18pt}\selectfont
-  {\TheSubTitle\par}
-
-\vspace*{1.5\baselineskip}
-
-{\LARGE\color{LightGoldenrod}
-  {\TheAuthor}\par
-}
+%\vspace*{1.5\baselineskip}
+%
+%{\LARGE\color{LightGoldenrod}
+%  {\TheAuthor}\par
+%}
 
 %% Bar across the bottom
-\begin{tikzpicture}[remember picture,overlay]
-  \node[fill={BannerColor},
-    minimum width=\paperwidth,
-    minimum height=4em,
-    anchor={south}]
-    at (current page.south) {};
-  \node[
-    anchor={south},
-    font=\LARGE\bfseries,
-    text=Cornsilk,
-    xshift=0mm, yshift=8.5mm
-  ] at (current page.south) {\ThePublisherName};
-\end{tikzpicture}
+%\begin{tikzpicture}[remember picture,overlay]
+%  \node[fill={BannerColor},
+%    minimum width=\paperwidth,
+%    minimum height=4em,
+%    anchor={south}]
+%    at (current page.south) {};
+%  \node[
+%    anchor={south},
+%    font=\LARGE\bfseries,
+%    text=Cornsilk,
+%    xshift=0mm, yshift=8.5mm
+%  ] at (current page.south) {\ThePublisherName};
+%\end{tikzpicture}
 
 \end{document}
