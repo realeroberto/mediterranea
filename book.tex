@@ -50,18 +50,18 @@
 %%
 \Boolean{ISBOOK}      {true}   % This is formatted as a book
  
-\Boolean{FINALFORM}   {false}  % Ready for publication
+\Boolean{FINALFORM}   {true}   % Ready for publication
 \Boolean{EDITMODE}    {no}     % Editing mode (double spaced)
 
 % Warning. Watermarks generate errors, but the doc still builds.
 \Boolean{WATERMARK}   {false}  % Place a watermark on the text (SLOW)
 
-\Boolean{TOHTML}      {no}   % Format for Tex4HT conversion
+\Boolean{TOHTML}      {no}     % Format for Tex4HT conversion
 \Boolean{TOMOBI}      {no}     % Extra Formatting for Kindle .MOBI
 \Boolean{TOEPUB}      {no}     % Extra Formatting for IDPF .EPUB
 \Boolean{RAWHTML}     {no}     % Allow /HCode directly in text [no PDF]
 
-\Boolean{TOPRESS}     {false}  % Format for paper printing
+\Boolean{TOPRESS}     {true}   % Format for paper printing
 \Boolean{NOCOLOR}     {no}     % Format for monochrome output
 
 \Boolean{SUBCAPTIONS} {true}   % Allow subcaptioned figures.
@@ -69,15 +69,15 @@
 
 \Boolean{CHAPTERNOTES}{no}     % Place endnotes at end of each chapter
 \Boolean{NOBODY}      {no}     % Incude only the intro [for debugging]
-\Boolean{NOLISTS}     {no}     % Do not generate lists of figures and tables
-\Boolean{NOFIGLIST}   {no}     % Do not generate list of figures
-\Boolean{NOFIGSRCS}   {no}     % Do not generate a list of figure sources
+\Boolean{NOLISTS}     {yes}    % Do not generate lists of figures and tables
+\Boolean{NOFIGLIST}   {yes}    % Do not generate list of figures
+\Boolean{NOFIGSRCS}   {yes}    % Do not generate a list of figure sources
 \Boolean{NOTABLIST}   {true}   % Do not generate list of tables
-\Boolean{NOINDEX}     {no}     % Do not generate index entries
-\Boolean{NOAUTHORS}   {no}     % Do not include the Authors section
+\Boolean{NOINDEX}     {yes}    % Do not generate index entries
+\Boolean{NOAUTHORS}   {yes}     % Do not include the Authors section
 \Boolean{NOHYPERREF}  {no}     % Disables hyperref - href linking
-\Boolean{NOABBR}      {no}     % Suppress abbreviations
-\Boolean{NOIMAGES}    {no}     % Disable Graphics inclusion [for debugging]
+\Boolean{NOABBR}      {yes}     % Suppress abbreviations
+\Boolean{NOIMAGES}    {yes}     % Disable Graphics inclusion [for debugging]
 
 \Boolean{ONECOLUMN}   {no}     % Use single column for indexes, authors, etc.
 \Boolean{IMAGEMATH}   {no}     % Use saved images for complex math expressions
