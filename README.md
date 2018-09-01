@@ -6,7 +6,7 @@ This repository contains the source code of my poetry book *Mediterranea*.
 
 ## Where to find the book
 
-* buy the book on [Amazon](https://www.amazon.it/Mediterranea-Roberto-Reale/dp/B07GRVW15Z/)
+* buy the book on [Amazon](https://www.amazon.it/gp/product/B07GRVW15Z/)
 * review the book on [Goodreads](https://www.goodreads.com/book/show/41526664-mediterranea)
 
 ## Branches
