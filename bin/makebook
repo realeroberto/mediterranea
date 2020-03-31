@@ -271,7 +271,7 @@ function makeBookVersions()
         doSetBookBoolean "book" NOCOLOR  1
         doSetBookBoolean "book" NOIMAGES 0
         drun "GENERATING BOOK" "$toFmt --topdf" "$toDir" "book.tex"  0
-        run "$binDir/setBookTotalPageCount $toDir/logs/7_pdflatex.log"
+        run "$binDir/setBookTotalPageCount $toDir/logs/5_pdflatex.log"
     fi
 
     if [[ $makeAll -eq 1 ]] || [[ $makeBook -eq 1 ]] || [[ $makeCover -eq 1 ]]; then
