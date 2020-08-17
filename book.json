@@ -1,0 +1,19 @@
+{
+    "author": "Roberto Reale",
+    "title": "Mediterranea",
+    "description": "Mediterranea",
+    "gitbook": ">= 3.x.x",
+    "plugins": [],
+    "root": "./markdown",
+    "structure": {
+        "readme": "README.md",
+        "summary": "README.md"
+    },
+    "links": {
+        "sidebar": {
+            "Source Code": "https://github.com/reale/mediterranea",
+            "Read on GitBook": "https://mediterranea.reale.me/"
+        }
+    },
+    "pluginsConfig": {}
+}
