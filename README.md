@@ -1,5 +1,7 @@
 # Mediterranea
 
+![Uptime Robot](https://img.shields.io/uptimerobot/status/m788022228-6f8ec8fb9eb0f101909e4a1a)
+
 ## Introduction
 
 This repository contains the source code of my poetry book *Mediterranea*.
