@@ -6,7 +6,7 @@ This repository contains the source code of my poetry book *Mediterranea*.
 
 ## Where to find the book
 
-* read the book online on [GitBook](https://mediterranea.reale.me/)
+* read the book online on [GitBook](https://mediterranea.reale.info/)
 * buy the book on [Amazon](https://www.amazon.it/gp/product/B07GRVW15Z/)
 * review the book on [Goodreads](https://www.goodreads.com/book/show/41526664-mediterranea)
 
